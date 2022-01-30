@@ -2,6 +2,8 @@ package _05_vault;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 /**
  * 
  * A vault with a secret code
@@ -9,6 +11,7 @@ import java.util.Random;
  */
 public class Vault {
 	private int secret = new Random().nextInt(1000001);
+
 
 	/**
 	 * Tries to access the vault
@@ -18,5 +21,9 @@ public class Vault {
 	 */
 	public boolean tryCode(int guess) {
 		return guess == secret;
+		
 	}
+	
+	
 }
+
